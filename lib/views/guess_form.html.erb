@@ -1,0 +1,13 @@
+<form action = "/guess" method = "post" name = "guess-form">
+  <div class = "form-group">
+    <input
+      type = "text"
+      name = "guess"
+      placeholder = "1234"
+      required = "required"
+      pattern = "[1-6]{4}"
+      autofocus
+    >
+  </div>
+  <input type = "submit" value = "Enter(<%= @game.attempts %>)">
+</form>
