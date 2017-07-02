@@ -1,0 +1,3 @@
+<h2>You <%= game_status %>!</h2>
+<%= render 'to_scoreboard.html.erb' if game_status == 'won' %>
+<%= render 'restart_form.html.erb' %>

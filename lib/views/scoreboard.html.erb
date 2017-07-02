@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <link rel = "stylesheet" href = "/stylesheets/application.css" type = "text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Codebreaker</title>
+</head>
+<body>
+  <div id = "container">
+    <h1>Scoreboard</h1>
+    <ul>
+      <% @game.get_scores.last(10).each do |player| %>
+        <li><%= player %></li>
+      <% end %>
+    </ul>
+    <%= render 'restart_form.html.erb' %>
+  </div>
+</body>
+</html>

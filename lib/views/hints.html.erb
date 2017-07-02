@@ -1,0 +1,9 @@
+<% unless show_hint.empty? %>
+    <h3>Secret code include: <%= show_hint %></h3>
+<% end %>
+
+<% unless @game.hints <= 0 %>
+    <form action = "/hint" method = "post">
+      <input type = "submit" value = "Use hint">
+    </form>
+<% end %>
